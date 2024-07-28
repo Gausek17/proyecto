@@ -1,0 +1,139 @@
+.ia-avatar-generator {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 30px;
+}
+
+.header {
+    font-size: 50px;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+
+.header span {
+    color: #fc7464;
+    font-weight: 600;
+}
+
+.img-loading {
+    display: flex;
+    flex-direction: column;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.image-grid img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.image-grid img.selected {
+    border-color: #fc7464    ;
+    box-shadow: 0 0 15px rgba(244, 93, 66, 0.7);
+}
+
+.search-box {
+    display: flex;
+    width: 1000px;
+    height: 95px;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 50px;
+    background: #1f3540;
+}
+
+.search-input {
+    width: 400px;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    color: white;
+    padding-left: 35px;
+    margin-right: 35px;
+}
+
+.search-input::placeholder {
+    color: #999;
+}
+
+.style-select {
+    width: 200px;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    color: white;
+    margin-right: 35px;
+    border-radius: 25px;
+    padding-left: 15px;
+    background-color: #2f4550;
+}
+
+.style-select option {
+    background-color: #1f3540;
+    color: white;
+}
+
+.generate-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 25px;
+    background: #fc7464;
+    cursor: pointer;
+}
+
+.loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.loading-bar {
+    width: 0%;
+    height: 8px;
+    background: rgb(72, 230, 19);
+    transition: width 0.5s ease;
+}
+
+.loading-text {
+    font-size: 18px;
+}
+
+
+
+.display-none {
+    display: none;
+}
+
+.download-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 85px;
+    font-size: 20px;
+    border-radius: 50px;
+    background: #f3503e;
+    cursor: pointer;
+}
